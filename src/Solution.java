@@ -3,12 +3,7 @@ import java.util.*;
 
 class Solution {
     public static List<List<Integer>> threeSum(int[] nums) {
-        /*res.add(temp);
-        temp = new ArrayList<>(Arrays.asList(6, 9, 13));
-        res.add(temp);*/
-
         Arrays.sort(nums);
-        /*System.out.println(Arrays.toString(nums));*/
 
 
         Set<List<Integer>> uniqueElements = new HashSet<>();
@@ -25,30 +20,6 @@ class Solution {
 
         List<List<Integer>> res = new ArrayList<>(uniqueElements);
 
-        /*int i = 0;
-        int j;
-        int n = res.size();
-        while (i < n-1) {
-            j = i + 1;
-            while (j != n) {
-                if (res.get(i).equals(res.get(j))) {
-                    res.remove(j);
-                    j--;
-                    n--;
-                }
-                j++;
-            }
-            i++;
-        }*/
-
-        /*for (int i = 0; i < res.size() - 1; i++) {
-            for (int j = i + 1; j < res.size(); j++) {
-                if (res.get(i).equals(res.get(j))) {
-                    res.remove(j);
-                    i--;
-                }
-            }
-        }*/
 
         return res;
     }
